@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Welcome to Home</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		#header {
+			background: #6588;
+			padding: 10px;
+		}
+
+		#container {
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;
+			position: relative;
+		}
+
+		#page {
+			width: 960px;
+			margin: 0 auto;
+			padding-bottom: 60px;
+			
+		}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container text-center">
+		<h1 id="header">Welcome to LMS System</h1>
+		<h3><a th:href="@{/register}">😇Register for LMS System and Start Learning</a></h3>
+		<h3><a th:href="@{/user_login}">🤯User Login</a></h3>
+		<h3><a th:href="@{/admin_login}">😎Admin Login</a></h3>
+		<h3><a th:href="@{/test}">👀About @Developer</a></h3>
+		<img src="https://media1.tenor.com/images/078aaee6f531adf350ece699ede653e3/tenor.gif" alt="great day"  width="250" />
+		
+
+
+</body>
+
+</html>

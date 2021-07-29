@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Error!</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container text-center">
+	<img src="https://media.tenor.com/images/cea01573800a42c1803da6ed311d12f8/tenor.gif" alt="error"  width="100" />
+		<h1>userID or Password is incorrect!</h1>
+		<form th:action="@{/}" method="get">
+			<div><button type="submit" class="btn btn-primary">GoTo Home page</button></div>
+		</form>
+		<!--<h3><a th:href="/@{/users}">List of Users</a></h3>-->
+	</div>
+
+</body>
+
+</html>
